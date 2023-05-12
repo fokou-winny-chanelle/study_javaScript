@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> my first try </title>
+	
+</head>
+<body>
+	<h2 style = "color:blue" >JS can change html content</h2>
+	<p id = "1" >i am fokou winny chanelle <br> this is my first try </p>
+	<button type="button" onclick='document.getElementById("1").innerHTML =" Oooooops error am not fokou winny <br> this is my first try " '> change page content </button>
+	<h2 style = "color:red" >JS can change attribute value e.g image src</h2>
+	<button type="button" onclick='document.getElementById("2").src = "images/red_lamborghuini.png" '> switch to RED</button>
+	<img id="2" src="images/black_lamborghuini.png" style="width: 200px;"> 
+	<button type="button" onclick='document.getElementById("2").src = "images/black_lamborghuini.png" '> back to BLACK</button>
+	<h2 style = "color:grey;" >JS can change the css style</h2>
+	<p id="3"> helloword </p>
+	<button type="button" onclick='document.getElementById("3").style.fontSize= "35px" '>change font size</button>
+	<h2 style = "color:violet;" >JS can hide html content</h2>
+	<p id="4"> welcome home</p>
+	<button type="button" onclick='document.getElementById("4").style.display= "none" '>hide</button>
+	<h2 style = "color:orange;" >JS can display hiden html content</h2>
+	<p id="5" style="display:none;"> how was your day</p>
+	<button type="button" onclick='document.getElementById("5").style.display= "block" '>display hiden</button>
+	<h2 style = "color:lightblue;" >JS script in body</h2>
+	<p id="6"> </p>
+	<script type="text/javascript">
+		document.getElementById("6").innerHTML = "new java script work";
+	</script>
+	<h2 style = "color:dodgerblue;" >JS functions</h2>
+	<p id="7"> hello chans</p>
+	<script type="text/javascript">
+		function firsFunction()
+		{
+			document.getElementById("7").innerHTML = "paragragh just change";
+		}
+	</script>
+	<button type="button" onclick='firsFunction()' >fuction call</button>
+	<h2 style = "color:green;" >external .js file</h2>
+	<p>x1 = 2 <br>x2 = 5 </p> 
+	<script type="text/javascript" src="first.js"></script>
+	<h2 style = "color:aqua;" >external js url reference</h2>
+	<p id="demo">url call</p>
+	<button type="button" onclick='myFunction()' >new fuction call</button>
+	<script type="text/javascript" src="https://www.w3schools.com/js/myScript.js"></script>
+	<h2 style = "color:greenyellow;" >ARRAYS</h2>
+	<p>this is my first array in js</p>
+	<script type="text/javascript">
+		var x = ["mango","apple","pineaple"]; document.write(" x = ", x,"<br>") 
+		x[0] = "banana";
+		x.push("guava");
+		document.write(" x = "+ x)
+	</script>
+	<h2 style = "color:navy;" >OBJECTS</h2>
+	<p>Using objects</p>
+	<script type="text/javascript">
+		var winny = {name:"fokou", age:"20" , hobbies:"music" loves:"urbain",};
+		winny.loves = "frank";
+		winny.goal = "succed";
+		document.write("i am ",winny.name);
+	</script>
+
+
+
+
+</body>
+</html>
